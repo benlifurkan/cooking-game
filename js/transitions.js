@@ -33,27 +33,27 @@ class Transition {
         this.messageSection = dom.querySelector('section');
 
         if(this.roundNumber === 1 && this.roundScore < 60){
-            this.message = 'Well, that\'s OK to move on but you can do better! Got to step it up in the next round!';
+            this.message = 'Tamam, devam etmek sorun değil ama daha iyisini yapabilirsin! Bir sonraki turda daha iyisini yapmalısın!';
 
         } else if(this.roundNumber === 1 && this.roundScore < 120) {
-            this.message = 'Nice work, you\'ve cooked before, but you\'re up against real competition in the next round!';
+            this.message = 'Güzel iş, daha önce yemek pişirmiştin, ama bir sonraki turda gerçek bir rekabetle karşı karşıyasın!';
 
         } else if(this.roundNumber === 1 && this.roundScore <= 150) {
-            this.message = 'Amazing! You should be a judge - that\'s a perfect dish!';
+            this.message = 'Harika! Jüri üyesi olmalısınız - mükemmel bir yemek!';
         }
         
         if(this.roundNumber === 2 && this.roundScore < 60){
-            this.message = 'You need to step it up if you\'re going to stay in this kitchen!! On to the last round!';
+            this.message = 'Bu mutfakta kalacaksan bir üst seviyeye çıkmalısın!! Son tura geçelim!';
 
         } else if(this.roundNumber === 2 && this.roundScore < 120) {
-            this.message = 'Fair... OK... Boring!! But good enough to move on to the next round!';
+            this.message = 'Orta... Fena değil... Ama bir sonraki tura geçmeye yetecek kadar iyi!';
             
         } else if(this.roundNumber === 2 && this.roundScore <= 150) {
-            this.message = 'Are you sure you aren\'t a professional? This dish is fantastic! Now go take on the final round!';
+            this.message = 'Profesyonel olmadığından emin misin? Bu yemek harika! Şimdi sırada final turu var!';
         }
         
         if(this.roundNumber === 3 && this.roundScore < 60) {
-            this.message = 'Time for you to go home! I don\'t think you\'re cut out for our Hall of Fame!';
+            this.message = 'Eve gitme vaktin geldi! Senin Şöhretler Müzesine uygun olduğunu sanmıyorum!';
             //pushes object into highScoreList array
             highScore.push({
                 playerName: this.playerName,
@@ -63,7 +63,7 @@ class Transition {
             userArrayParse[3] = 0;
 
         } else if(this.roundNumber === 3 && this.roundScore < 100) {
-            this.message = 'You may not be the #1 score, but you did yourself proud! Great cooking skills!';
+            this.message = '1 numaralı skor olmayabilirsin ama kendini gururlandırdın! Harika yemek pişirme becerileri!';
             //pushes object into highScoreList array
             highScore.push({
                 playerName: this.playerName,
@@ -72,7 +72,7 @@ class Transition {
             userArrayParse[2] = 1;
             userArrayParse[3] = 0;
         } else if(this.roundNumber === 3 && this.roundScore <= 150) {
-            this.message = 'You\'re among the greats! This dish is sure to put you in our Hall of Fame!';
+            this.message = 'Sen en iyilerdensin! Bu yemek seni kesinlikle Şöhretler Müzesine sokacak!';
             //pushes object into highScoreList array
             highScore.push({
                 playerName: this.playerName,

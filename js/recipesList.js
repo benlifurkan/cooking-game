@@ -184,7 +184,7 @@ const allIngredients = [
 
 // BREAKFAST RECIPES
 
-const omelet = new Recipe('Omelet',
+const omelet = new Recipe('Omlet',
     [
         new Egg(50),
         new Ham(30),
@@ -193,7 +193,7 @@ const omelet = new Recipe('Omelet',
         new Avocado(20)
     ]);
         
-const fullEnglish = new Recipe('Full English Breakfast',
+const fullEnglish = new Recipe('İngiliz Kahvaltısı',
     [
         new Egg(30),
         new Beans(30),
@@ -220,16 +220,8 @@ const breakfastBurrito = new Recipe('Breakfast Burrito',
         new Sausage(20)
     ]);
 
-const hash = new Recipe('Hash',
-    [
-        new ButternutSquash(50),
-        new Potatoes(30),
-        new Mushrooms(30),
-        new Onion(20),
-        new Bacon(20)
-    ]);
 
-const breakfast = [omelet, fullEnglish, benedict, breakfastBurrito, hash];
+const breakfast = [omelet, fullEnglish, breakfastBurrito];
 
 
 
@@ -240,7 +232,7 @@ const breakfast = [omelet, fullEnglish, benedict, breakfastBurrito, hash];
 
 // LUNCH RECIPES
 
-const tacos = new Recipe('Carne Asada Tacos',
+const tacos = new Recipe('Carne Asada Tacoları',
     [
         new Tortilla(50),
         new Beef(40),
@@ -249,7 +241,7 @@ const tacos = new Recipe('Carne Asada Tacos',
         new Lime(20)
     ]);
     
-const salad = new Recipe('Cobb Salad',
+const salad = new Recipe('Cobb Salatası',
     [
         new Lettuce(40),
         new Tomatoes(30),
@@ -290,7 +282,7 @@ const lunch = [tacos, salad, ceviche, hamburger, nachos];
 
 // DINNER RECIPES
 
-const chickenSandwich = new Recipe('Chicken Sandwich',
+const chickenSandwich = new Recipe('Tavuk Sandviç',
     [
         new Chicken(50),
         new Bread(40),
@@ -299,7 +291,7 @@ const chickenSandwich = new Recipe('Chicken Sandwich',
         new Cheese(10)
     ]);
 
-const caesarSalad = new Recipe('Caesar Salad',
+const caesarSalad = new Recipe('Sezar Salatası',
     [
         new Lettuce(50),
         new Chicken(40),
@@ -316,7 +308,7 @@ const cheeseburger = new Recipe('Cheeseburger',
         new Tomatoes(20)
     ]);
     
-const beefStew = new Recipe('Beef Stew',
+const beefStew = new Recipe('Dana Etli Güveç',
     [
         new Beef(50),
         new Onion(30),

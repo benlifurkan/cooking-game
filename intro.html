@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500,500i,700,700i|Londrina+Solid:400,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/intro.css">
-    <title>Project GitGrub Intro Instructions Page</title>
-</head>
-<body>
-    <h1>Welcome to the <span class = "main-title">GitGrub</span> Competition!</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500,500i,700,700i|Londrina+Solid:400,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/intro.css" />
+    <link rel="shortcut icon" type="image/png" href="public/favicon.png" />
+    <title>Nisa'nın Mutfağı - Talimatlar</title>
+  </head>
+  <body>
+    <h1><span class="main-title">Nisa'nın Mutfağına</span> Hoş Geldiniz!</h1>
 
     <form id="chef-select">
-
-        <h2>Click to Choose Your Character:</h2>
-        <div id = "photos-spacer">
-        <input type="image" src="images/Male.png" name="user-chef-male" class="user-chef-male" id="male"/>
-        <input type="image" src="images/Female.png" name="user-chef-female" class="user-chef-female" id="female"/>
-        </div>
+      <h2>Lütfen seçmek istediğiniz karaktere tıklayın:</h2>
+      <div id="photos-spacer">
+        <input
+          type="image"
+          src="images/Male.png"
+          name="user-chef-male"
+          class="user-chef-male"
+          id="male"
+        />
+        <input
+          type="image"
+          src="images/Female.png"
+          name="user-chef-female"
+          class="user-chef-female"
+          id="female"
+        />
+      </div>
     </form>
     <div id="instructions">
-        <h2>Instructions:</h2>
-        <p>Over the next three rounds of the tournament your goal is to create the best dish possible out of a specific selection of ingredients.</p>
-        <p>The judge will decide what dish you need to make, and you will need to choose the food items to complete that task.</p>
-        <p>Each item will contribute to your High Score, awarding more or less points depending on how well they fit the Judge's tastes.</p> 
-        <p></p>
-        <h2>Please Enter Your Name:</h2>
-        <div id="flex-grid">
-            <div id="row">
-                <form id ="player-name">
-                    <input type="text" name="username" maxlength="13" required>
-                    <input type="submit" value="Start Game!">
-                </form>
-            </div>
+      <h2>Talimatlar:</h2>
+      <p>
+        Turnuvanın sonraki üç turunda hedefiniz belirli bir malzeme seçiminden
+        mümkün olan en iyi yemeği yaratmaktır.
+      </p>
+      <p>
+        Hakem hangi yemeği yapmanız gerektiğine karar verecek ve bu görevi
+        tamamlamak için yiyecek öğelerini seçmeniz gerekecektir.
+      </p>
+      <p>
+        Her öğe, Hakemin zevklerine ne kadar uyduğuna bağlı olarak daha fazla
+        veya daha az puan vererek Yüksek Puanınıza katkıda bulunacaktır.
+      </p>
+      <p></p>
+      <h2>Lütfen Adınızı Girin:</h2>
+      <div id="flex-grid">
+        <div id="row">
+          <form id="player-name">
+            <input type="text" name="username" maxlength="13" required />
+            <input type="submit" value="Oyuna Başla!" />
+          </form>
         </div>
+      </div>
     </div>
-    <script src = "js/intro.js"></script>
-</body>
+    <script src="js/intro.js"></script>
+  </body>
 </html>
