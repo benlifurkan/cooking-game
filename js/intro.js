@@ -27,7 +27,7 @@ function playerNameSubmit(event) {
     // Cannot advance if a charater isn't selected 
     if (userData[0] === 'image location') {
         event.preventDefault();
-        showToast('Lütfen bir karakter seçin.');
+        showToast('Lütfen bir karakter seçin!');
     } else {
         event.preventDefault();
         var userName = event.target.username.value;
@@ -42,7 +42,7 @@ function playerNameSubmit(event) {
         
         setTimeout(() => {
             toast.classList.remove('show');
-        }, 2500); // 3 saniye sonra kaybolur
+        }, 3000); // 3 saniye sonra kaybolur
     }
     
 }
