@@ -86,7 +86,7 @@ class GameApp {
         
         const exitButton = dom.getElementById('exit-button');
         exitButton.addEventListener('click', () => {
-            window.location.replace('index.html');
+            window.location.replace('/');
         });
         
         return dom;
