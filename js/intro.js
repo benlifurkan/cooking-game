@@ -25,17 +25,26 @@ playerName.addEventListener('submit', playerNameSubmit);
 function playerNameSubmit(event) {
 
     // Cannot advance if a charater isn't selected 
-    if(userData[0] === 'image location'){
+    if (userData[0] === 'image location') {
         event.preventDefault();
-        alert('Lütfen bir karakter seçin.');
-    }
-    // Move on if character selected
-    else {
+        showToast('Lütfen bir karakter seçin.');
+    } else {
         event.preventDefault();
         var userName = event.target.username.value;
         userData.splice(1, 1, userName);
         window.location.replace('gameapp.html');
     }
+    
+    function showToast(message) {
+        const toast = document.getElementById('toast');
+        toast.textContent = message;
+        toast.classList.add('show');
+        
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 2500); // 3 saniye sonra kaybolur
+    }
+    
 }
 
 
